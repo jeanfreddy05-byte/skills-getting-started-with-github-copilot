@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const activitiesList = document.getElementById("activities-list");
   const activitySelect = document.getElementById("activity");
   const signupForm = document.getElementById("signup-form");
+  const emailInput = document.getElementById("email");
   const messageDiv = document.getElementById("message");
   let activitiesState = {};
 
@@ -123,7 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
   signupForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const email = document.getElementById("email").value.trim().toLowerCase();
+    const email = emailInput.value.trim().toLowerCase();
     const activity = document.getElementById("activity").value;
 
     if (!email || !activity) {

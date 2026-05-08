@@ -123,6 +123,7 @@ section h3 {
 
 .participant-email {
   overflow-wrap: anywhere;
+  font-size: 0.95rem;
 }
 
 .participant-empty {
