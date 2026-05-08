@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 5000);
   }
 
+  // Render all activities with participant information
   function renderActivities(activities) {
     activitiesList.innerHTML = "";
     activitySelect.innerHTML = '<option value="">-- Select an activity --</option>';
