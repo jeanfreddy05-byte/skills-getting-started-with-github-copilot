@@ -1,4 +1,4 @@
-// Application with participant signup management
+// Mergington High School Activity Management - Participants Display and Signup
 document.addEventListener("DOMContentLoaded", () => {
   const activitiesList = document.getElementById("activities-list");
   const activitySelect = document.getElementById("activity");
