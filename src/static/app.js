@@ -1,4 +1,5 @@
-// Mergington High School Activity Management - Participants Display and Signup
+// Mergington High School - Activity Management with Participant Display Features
+// Shows all participants for each activity with delete functionality
 document.addEventListener("DOMContentLoaded", () => {
   const activitiesList = document.getElementById("activities-list");
   const activitySelect = document.getElementById("activity");
