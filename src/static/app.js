@@ -123,8 +123,13 @@ document.addEventListener("DOMContentLoaded", () => {
   signupForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const email = document.getElementById("email").value;
+    const email = document.getElementById("email").value.trim().toLowerCase();
     const activity = document.getElementById("activity").value;
+
+    if (!email || !activity) {
+      showMessage("Please select an activity and provide a valid email.", "error");
+      return;
+    }
 
     try {
       const response = await fetch(
